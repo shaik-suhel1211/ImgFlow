@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImageAPI-Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <!-- header -->
+    <div id="header">
+        <div id="header-content">
+         <h1>Dashboard</h1>
+         <a href="home.html">Home</a>
+         <a>Account</a>
+        </div>
+        <button id="logoutBtn">Logout</button>
+    </div>
+    <!-- Upload Section -->
+    <div id="uploadSec">
+      <h2>Upload Image</h2> <hr>
+      <div id="upload-inputs">
+        <label for="imageTitle">Title:</label>
+        <input id="imageTitle" type="text" placeholder="Enter title of the image">
+        <label for="fileInput">Select from device:</label>
+        <input type="file" id="fileInput" accept="image/*">
+        <label for="urlInput">Or paste image url:</label>
+        <input type="url" id="urlInput" placeholder="Paste image url here">
+        <button id="uploadBtn">Upload</button>
+    </div>
+    </div>
+    <!-- Token Section -->
+    <div id="tokenSec">
+     <h2>Access Token</h2><hr>
+     <div id="tokenSecContent">
+        <label for="accessToken">Your Access Token :</label>
+        <input type="text" id="accessTokenSec" readonly>
+        <button id="copyTokenBtn">Copy</button>
+        <span id="copyMsg">Copied!</span>
+    </div>
+    <p id="tokenMes">❗️ Use this token to authenticate your API calls.</p>
+    </div>
+
+    <!-- Images Section -->
+    <div id="imageSec"></div>
+
+    <!-- Footer Section -->
+    <div id="footer">
+        <h3>ImageAPI</h3> <hr>
+        <div id="footer-content">
+            <span>&copy; 2025 ImageAPI. All rights reserved.</span>
+        </div>
+     </div>
+     <script src="js/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImgFlow-Home</title>
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+  <!-- Navbar -->
+    <div id="navbar">
+        <div>
+        <h2 id="logo">ImgFlow</h2>
+        <a class="navBtn" href="#imageSec">Images</a>
+        <a class="navBtn" href="#searchSec">Search</a>
+        <a class="navBtn">Docs</a>
+        <a class="navBtn">Resources</a>
+        </div>
+        <div class="AuthSection">
+            <button class="btn logBtn">Login</button>
+            <button class="btn signUpBtn">SignUp</button>
+        </div>
+        <div id="loggedSec">
+          <a id="dashboardBtn" href="dashboard.html">Dashboard</a>
+          <button class="btn logoutBtn">Logout</button>
+        </div>
+    </div>
+    <!-- Main/Hero Section -->
+    <div id="main">
+      <!-- before signup/login -->
+      <div id="heroSec">
+        <div id="message">
+        <h1>The most powerful photo engine in the world.</h1>
+        <p>Welcome to the Official ImgFlow. Create with the largest open collection of high-quality photos.</p>
+        <button id="registerBtn">Register as a developer</button>
+        </div>
+        <img id="heroImg" src="images/heroImage.jpg">
+      </div>
+      <!-- after signup/login -->
+       <div id="heroSecAfterAuth">
+        <h1>The Future of Visuals, Now</h1>
+        <p>Generate stunning images on demand with a single API. From concept to creation, turn your ideas into visuals instantly.</p>
+       </div>
+    </div>
+   <!-- Features Section -->
+    <div id="features">
+       <div class="feature-box">
+          <h4>Register & Get Access Token</h4>
+          <p>Create a free account and instantly get your API token for authentication.</p>
+       </div>
+       <div class="feature-box">
+          <h4>Huge Photo Library</h4>
+          <p>Access millions of high-quality photos with powerful filters and search.</p>
+       </div>
+       <div class="feature-box">
+          <h4>Fast & Reliable</h4>
+          <p>Optimized CDN delivery for quick load times anywhere in the world.</p>
+       </div>
+       <div class="feature-box">
+          <h4>Developer Friendly</h4>
+          <p>Well-documented endpoints, code examples, and SDKs to speed up integration.</p>
+       </div>
+    </div>
+     <!-- Search section -->
+    <div id="searchSec">
+        <div>
+            <input id="searchInput" type="text" placeholder="🔍  Search photos and illustrations">
+            <button id="searchBtn">Search</button>
+        </div>
+    </div>
+
+     <div id="imageSec">
+      <div id="beforeSearch">
+      <div id="beforeSearchImageSec" class="sis"></div>
+      <button id="bsLoadMoreBtn" class="loadMoreBtn">Load More</button>
+      </div>
+      <div id="afterSearch">
+          <div id="afterSearchImageSec" class="sis"></div>
+          <button id="asLoadMoreBtn" class="loadMoreBtn">Load More</button>
+      </div>
+     </div>
+
+     <!--Footer Section  -->
+     <div id="footer">
+        <h3>ImageAPI</h3> <hr>
+        <div id="footer-content">
+            <span>&copy; 2025 ImageAPI. All rights reserved.</span>
+            <span>Designed & Developed by <a href="https://linkedin.com/in/shaiksuhelahmed03" target="_blank">Shaik Suhel</a></span>
+        </div>
+     </div>
+
+     <!-- login modal -->
+      <div id="loginOverlay">
+        <div id="loginModal" class="authModal">
+            <span class="closeModal" id="loginCloseBtn">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm" class="authForm">
+                <input id="loginEmailInput" type="text" placeholder="Email:">
+                <span class="error" id="loginEmailError"></span>
+                <input id="loginPasswordInput" type="text" placeholder="Password:">
+                <span class="error" id="loginPasswordError"></span>
+                <button id="formLoginBtn" type="submit">Login</button>
+            </form>
+        </div>
+      </div>
+      <!-- signUp modal -->
+      <div id="signUpOverlay">
+        <div id="signUpModal" class="authModal">
+            <span class="closeModal" id="signUpCloseBtn">&times;</span>
+            <h2>Sign Up</h2>
+            <form id="signUpForm" class="authForm">
+                <input id="signUpUsernameInput" type="text" placeholder="Username:" required>
+                <span class="error" id="signUpUsernameError"></span>
+                <input id="signUpEmailInput" type="text" placeholder="Email:" required>
+                <span class="error" id="signUpEmailError"></span>
+                <input id="signUpPasswordInput" type="text" placeholder="Password:" required>
+                <span class="error" id="signUpPasswordError"></span>
+                <button id="formSignUpBtn" type="submit">SignUp</button>
+            </form>
+        </div>
+      </div>
+<script src="js/home.js"></script>
+</body>
+</html>

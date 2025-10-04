@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#header{
+    padding:1rem 2rem;
+    background-color: #152736;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#header-content h1{
+    display: inline;
+    margin-right:3rem;
+}
+#header-content a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-right:1rem;
+    color: white;
+}
+#logoutBtn{
+    background-color:#FF6347;
+    color: white;
+    padding:0.5rem;
+    border: none;
+    border-radius:0.5rem;
+    margin-right:1rem;
+}
+#logoutBtn:hover{
+    background-color:#CC4F38;
+}
+#uploadSec{
+    padding: 1rem;
+    background-color:#1e3d55;
+    color: white;
+}
+#uploadSec h2{
+    margin:1rem 0;
+}
+#upload-inputs{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+#upload-inputs label{
+    font-size: 1.2rem;
+    margin-bottom:0.5rem;
+}
+#upload-inputs input{
+    padding:0.5rem;
+    border-radius:0.5rem;
+    border: none;
+    width:30%;
+    margin-bottom:0.5rem;
+    background-color:wheat;
+}
+#upload-inputs input::placeholder{
+    color: black;
+}
+#uploadBtn{
+    background-color: #FF6347;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    border-radius:1rem;
+    max-width:30%;
+    margin-top:0.5rem;
+}
+#uploadBtn:hover{
+    background-color: #CC4F38;
+}
+#tokenSec{
+    padding: 1rem;
+    background-color: #152736;
+    color: white;
+}
+#tokenSec h2{
+    margin-bottom:1rem;
+}
+#tokenSecContent{
+    padding:1rem;
+}
+#tokenSecContent label{
+    font-size: 1.2rem;
+}
+#accessTokenSec{
+    width:35%;
+    padding:0.5rem;
+    border: none;
+    border-radius:0.5rem;
+    background-color: whitesmoke;
+    margin-right:1rem;
+}
+#copyTokenBtn{
+    padding:0.5rem;
+    border: none;
+    border-radius:0.5rem;
+    background-color:wheat;
+}
+#copyTokenBtn:hover{
+    background-color: rgb(221, 195, 148);
+}
+#copyMsg{
+    margin-left:1rem;
+    font-size: 1.2rem;
+    display: none;
+}
+#tokenMes{
+    font-size: 1.2rem;
+    padding-left:1rem;
+    color:#FF6347;
+}
+#imageSec{
+    padding:1rem;
+    background-color: #1e3d55;
+    display: grid;
+    gap:0.5rem;
+    grid-template-columns:repeat(3,minmax(230px,1fr));
+}
+.uploadedImage{
+    width:100%;
+    object-fit: cover;
+    display: block;
+    border-radius:0.5rem;
+    margin-bottom:0.5rem;
+}
+.deleteImageBtn{
+    padding:0.5rem;
+    background-color: red;
+    color: white;
+    width:20%;
+    border: none;
+    display: block;
+    border-radius:0.5rem;
+    position: relative;
+    bottom: 0;
+    left:0;
+    margin: auto;
+}
+.deleteImageBtn:hover{
+    background-color:rgb(120, 0, 0);
+}
+#footer{
+    padding:2rem;
+    background-color: #152736;
+    color: white;
+    font-size:1.2rem;
+}
+#footer h3{
+    margin-bottom:1rem;
+    text-align: center;
+}
+#footer-content{
+    display: flex;
+    justify-content:center;
+    margin-top:1rem;
+    align-items: center;
+    gap:1rem;
+}
